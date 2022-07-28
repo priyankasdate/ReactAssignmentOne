@@ -1,17 +1,11 @@
 import "./App.css";
-import DemoComp from "./Component/DemoComp";
-import DemoComp2 from "./Component/DemoComp2";
-
+import UserDetails from "./Component/UserDetails";
+import Image from "./Component/Image";
+import UserList from "./Component/UserList";
 // props, state
 function App() {
   
-  return (
-    <div className="App">
-      <DemoComp />
-      <DemoComp2 />
-     
-    </div>
-  );
+  
 }
 
 export default App;
