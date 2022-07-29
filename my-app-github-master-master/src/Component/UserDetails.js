@@ -1,11 +1,24 @@
 
+
 const UserDetails = () =>{
+{
+
+    const fetchUser = async () => {
+        try {
+          let response = await fetch('https://jsonplaceholder.typicode.com/users');
+          let json = await response.json();
+          return { success: true, data: json };
+        } catch (error) {
+          console.log(error);
+          return { success: false };
+        }
+      }
+      fetchUser();
+}
+
     return(
-        <div>
-            <p>
-                
-            </p>
-        </div>
+        <UserDetails/>
+        
     )
 }
- export default UserDetails;
+export default UserDetails;
