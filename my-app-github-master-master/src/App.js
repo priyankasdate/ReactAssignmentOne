@@ -1,13 +1,11 @@
 import "./App.css";
 import UserDetailsComponent from "./Component/UserDetailsComponent";
 
-
-
 function App() {
    return (
-        <div>
+        <div className="App">
          <UserDetailsComponent/>
-         
+        
        
          </div>
    );
