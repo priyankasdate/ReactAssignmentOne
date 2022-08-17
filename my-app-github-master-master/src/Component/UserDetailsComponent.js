@@ -6,20 +6,14 @@ import UserListComponent from './UserListComponent';
 
 function UserDetailsComponent() {
 
-  const [namesArray, setNamesArray] = useState([]);
+ 
   const [user, setUser] = useState([]);
  
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/users")
       .then((response) => {
         setUser(response.data);
-        let namesTempArray = [];
-        for (let i = 0; i < user.length; i++) {
-          namesTempArray.push(user[i].name);
-
-        }
-        setNamesArray(namesTempArray);
-        console.log(namesArray);
+        
       })
   }, [])
 
@@ -40,12 +34,12 @@ function UserDetailsComponent() {
               url={url }
               />
             )
-          })}
+          })} 
 
         </div>
       }
 
-
+  
     </>
   )
 }
